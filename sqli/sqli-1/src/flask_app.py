@@ -10,10 +10,10 @@ app = Flask(__name__)
 def index():
     return (
         "Hi 👋 head out to "
-        '<a href="/challenges/111.111.111-11">this link (chall 1)</a> to get started.'
-        '<a href="/challenges2/111.111.111-11">this link (chall 2)</a> to get started.'
-        '<a href="/challenges3/111.111.111-11">this link (chall 3) </a> to get started.'
-        '<a href="/challenge4/111.111.111-11">this link (chall 4)</a> to get started.'
+        '<a href="/challenges/111.111.111-11">this link (chall 1)</a> to get started.<br>'
+        '<a href="/challenges2/111.111.111-11">this link (chall 2)</a> to get started.<br>'
+        '<a href="/challenges3/111.111.111-11">this link (chall 3) </a> to get started.<br>'
+        '<a href="/challenge4/111.111.111-11">this link (chall 4)</a> to get started.<br>'
 
     )
 

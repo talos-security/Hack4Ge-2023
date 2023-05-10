@@ -54,6 +54,8 @@ Creare una repository **privata** su Github, caricare il codice del prototipo sv
 
 ## Credits
 
+ 
+
 ## Risorse
 - https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
 - https://portswigger.net/web-security/sql-injection
