@@ -30,6 +30,7 @@ USER_DATA = [
     User(1, email="any@email.com", cpf="111.111.111-11"),
     User(2, email="another@email.com", cpf="222.222.222-22"),
     User(3, email="yetanother@email.com", cpf="333.333.333-33"),
+    User(4, email="root@gmail.com", cpf="flag\{hack4ge_sqli\}")
 ]
 
 MIN_CHALLENGES_PER_USER = 2

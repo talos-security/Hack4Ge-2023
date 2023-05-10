@@ -1,16 +1,12 @@
-# Flask Vulnerable to SQL Injection 💉🔓
+# SQL Injection 1 💉🔓
 
-## Setup
+# How to run
 
-```
-sudo apt install python3-virtualenv
-virtualenv -p python3 venv
-source venv/bin/activate
-pip3 install -r requriments.txt
-python3 src/main.py
+```bash
+./start-docker.sh
 ```
 
-## Esempi
+## Examples
 
 | [/challenges/111.111.111-11](http://localhost:5000/challenges/111.111.111-11)                                                                                                                                                                                                                                                 | Expected usage                                   |
 | [/challenges/' or '1' = '1](http://localhost:5000/challenges/'%20or%20'1'%20=%20'1)                                                                                                                                                                                                                                           | Vulnerability proof                              |

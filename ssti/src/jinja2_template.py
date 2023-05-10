@@ -1,9 +1,10 @@
 from flask import Blueprint, render_template_string, request
 
-jinja2Template = Blueprint('jinja2Template', __name__)
+jinja2_template = Blueprint('jinja2_template', __name__)
 
-@jinja2Template.route('/',methods=['GET', 'POST'])
+@jinja2_template.route('/',methods=['GET', 'POST'])
 def base():
+    # vulnerable
     person = ""
     if request.method == 'POST':
       if request.form['name']:
@@ -15,4 +16,6 @@ def base():
       <input type="text" name="name" value="">\
       <input type="submit" value="Submit">\
     </form><h2>Hello %s! </h2></body></html>' % person
+    
+
     return render_template_string(template)

@@ -34,6 +34,7 @@ def connection_context():
 
 
 def get_challenges_for_candidate(cpf: str) -> List[Any]:
+    # vulnerable
     query = f"""
         SELECT title, score FROM challenges c
         JOIN users u
@@ -44,8 +45,46 @@ def get_challenges_for_candidate(cpf: str) -> List[Any]:
     print(f"[bold]Executing query:[/bold] [green]{query}[/green]")
     print(f"[bold]{'-' * 50}[/bold]")
 
+
     with connection_context() as cur:
         cur.execute(query)
         results = cur.fetchall()
-
         return results
+
+
+    
+def get_challenges_for_candidate_2(cpf: str) -> List[Any]:
+    # vulnerable
+    with connection_context() as cur:
+        cur.execute("""
+        SELECT title, score FROM challenges c
+        JOIN users u
+        ON u.id = c.user_id
+        WHERE u.cpf=%s
+        """ %cfp)
+    
+        results = cur.fetchall()
+        return results
+
+
+
+
+def get_challenges_for_candidate_3(cpf: str) -> List[Any]:
+    # safe
+    with connection_context() as cur:
+        cur.execute(" SELECT title, score FROM challenges c JOIN users u ON u.id = c.user_id WHERE u.cpf=%s'", (cpf, ))
+    
+        results = cur.fetchall()
+        return results
+
+
+
+def get_challenges_for_candidate_4(cpf: str) -> List[Any]:
+    # safe
+    with connection_context() as cur:
+        cur.execute(" SELECT title, score FROM challenges c JOIN users u ON u.id = c.user_id WHERE u.cpf=%(cpf)s", {'cpf':cpf})
+    
+        results = cur.fetchall()
+        return results
+
+

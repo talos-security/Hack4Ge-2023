@@ -1,10 +1,11 @@
 from flask import Blueprint, render_template_string, request
 
-jinja2Template2 = Blueprint('jinja2Template2', __name__)
+jinja2_template_2 = Blueprint('jinja2_template_2', __name__)
 
-@jinja2Template2.route('/',methods=['GET', 'POST'])
+@jinja2_template_2.route('/',methods=['GET', 'POST'])
 def base():
-    person = "user_person"
+    # vulnerable
+    person = "user_person‮⁦"
     access_level = "user"
 
     if request.method == 'POST':

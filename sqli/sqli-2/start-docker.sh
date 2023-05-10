@@ -5,5 +5,5 @@ else
     IP=$1
 fi
 
-docker build -t ssti .
-docker run -p $IP:5003:5003 ssti
+docker build -t sqli2 .
+docker run -p $IP:5001:5001 sqli2

@@ -5,5 +5,5 @@ else
     IP=$1
 fi
 
-docker build -t sqli .
-docker run -d -p $IP:5000:5000 sqli
+docker build -t sqli1 .
+docker run -p $IP:5000:5000 sqli1
