@@ -3,6 +3,7 @@
 Benvenuti alla 1° Edizione di **Hack4Ge**.
 In questa prima edizione, il vostro obiettivo sarà lo sviluppo di un prototipo in grado di effettuare un'analisi statica del codice sorgente Python al fine di individuare le vulnerabilità discusse durante la presentazione, nello specifico [SQLi (SQL Injection)](https://book.hacktricks.xyz/pentesting-web/sql-injection) e [SSTI (Server-Side Template Injection)](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection).
 
+Qui le slide delle presentazione: [SSTI-SQLI](https://docs.google.com/presentation/d/16aK91SOz5eFRreJVhEQSWQd7_C3m1P0QCpIzaDGcWvk/edit?usp=sharing).
 
 ## Requisiti
 
@@ -66,6 +67,7 @@ Creare una repository **privata** su Github, caricare il codice del prototipo sv
 - https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
 - https://portswigger.net/web-security/sql-injection
 - [how install docker](https://docs.docker.com/desktop/)
+
 
 ## Credits
 
