@@ -16,6 +16,7 @@ L'utilizzo di Docker permette di avere una istanza di esempio e funzionante su o
 Nella cartella **sqli** vi sono tutti gli applicativi vulnerabili al sql-injection. 
 - `sqli-1`. Invocare il comando `star-docker.sh` in ambiente unix e visitare su browser [http://127.0.0.1:5000](http://127.0.0.1:5000).
 - `sqli-2`. Invocare il comando `star-docker.sh` in ambiente unix e visitare su browser [http://127.0.0.1:5001](http://127.0.0.1:5001).
+
 Nella cartalla **ssti** vi sono quelli vulnerabili al server-side-template-injection. Invocare il comando `star-docker.sh` in ambiente unix e visitare su browser [http://127.0.0.1:5003](http://127.0.0.1:5003).
 
 
