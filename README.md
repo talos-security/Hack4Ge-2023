@@ -50,10 +50,12 @@ Il programma dovrà stampare a console i file dove è presente la vulnerabilità
 ### Come consegnare il codice?
 
 Creare una repository **privata** su Github, caricare il codice del prototipo sviluppato e aggiungere i seguenti utenti:
-- dado1513
-- H2SO4T
+- [dado1513][https://github.com/Dado1513]
+- [H2SO4T](https://github.com/Dado1513)
 
 ## Credits
+
+- Talos srls - https://talos-sec.com
 
  
 
