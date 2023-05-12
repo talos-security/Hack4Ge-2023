@@ -61,7 +61,7 @@ def get_challenges_for_candidate_2(cpf: str) -> List[Any]:
         JOIN users u
         ON u.id = c.user_id
         WHERE u.cpf=%s
-        """ %cfp)
+        """%cpf)
     
         results = cur.fetchall()
         return results
