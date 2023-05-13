@@ -7,7 +7,7 @@ Qui le slide delle presentazione: [SSTI-SQLI](https://docs.google.com/presentati
 
 ## Requisiti
 
-Gli applicativi vulnerabili sono scritta in Python.
+Gli applicativi vulnerabili sono scritti in Python.
 Le tecnologie su cui si basano sono le seguenti:
 
 - Python 3.x
