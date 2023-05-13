@@ -82,8 +82,10 @@ def get_challenges_for_candidate_3(cpf: str) -> List[Any]:
 def get_challenges_for_candidate_4(cpf: str) -> List[Any]:
     # safe
     with connection_context() as cur:
-        cur.execute("SELECT title, score FROM challenges c JOIN users u ON u.id = c.user_id WHERE u.cpf=%(cpf)s", {'cpf':cpf})
-    
+        cur.execute("""
+        SELECT title, score FROM challenges c JOIN users u ON u.id = c.user_id WHERE u.cpf=:cpf
+        """, {'cpf': cpf})
+        
         results = cur.fetchall()
         return results
 
